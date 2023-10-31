@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev | HTML, CSS, JAVASCRIPT blog</title>
+
+    <link rel="shortcut icon" href="./assets/image/shortcut.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+</head>
+<body>
+
+    <!-- st header -->
+    <header>
+        <div class="header-left">
+            <a href="./index.html">
+                <img src="./assets/image/logo.png" alt="logo" class="logo">
+            </a>
+            <div class="menu-wrap">
+                <a class="menu-item active-item" href="./index.html">Trang chủ</a>
+                <a class="menu-item" href="./profile.html">Giới thiệu</a>
+                <a class="menu-item" href="./contact.html">Liên hệ</a>
+            </div>
+        </div>
+        <div class="header-action">
+            <a href="./search.html">
+                <div class="header-action-item search">
+                    <i class='bx bx-search header-action-icon'></i>
+                </div>
+            </a>
+            <div class="header-action-item account" id="account">
+                <i class='bx bx-user header-action-icon'></i>
+
+                <div class="account-wrap" id="account-wrap">
+                    <div class="account-title">
+                        <div class="account-title-div current">Tài khoản: <span class="account-span">trinhhung</span></div>
+                        <div class="account-title-div current">User ID: <span class="account-span">DEV1</span></div>
+                    </div>
+                    <div class="account-list">
+                        <a href="./information.html" class="account-item">
+                            <i class='bx bx-user-pin'></i>
+                            <span class="account-item-text">Trang cá nhân</span>
+                        </a>
+                        <a href="#" class="account-item">
+                            <i class='bx bx-log-out'></i>
+                            <span class="account-item-text">Đăng xuất</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- en header -->
+
+    <!-- st container -->
+    <div class="container">
+        <section class="section unsection">
+            <div class="section wrapper">
+                <div class="template-header current">
+                    <a href="./index.html">Trang chủ</a>
+                    &#160;<span>></span>&#160;
+                    <p>Html & Css</p>
+                </div>
+                <div class="template-name current">Create A Beautiful Responsive Website in HTML and CSS</div>
+                <div class="information">
+                    <p class="wrapper-item-time"><i class="bi bi-clock"></i> 2023/09/10</p>
+                    <div class="information-box">
+                        <button type="submit" class="button-info add-favorites" title="Thêm vào mục ưu thích">
+                            <i class="bi bi-bookmark-dash-fill"></i>
+                        </button>
+                        <button type="submit" class="button-info likes" title="Thích">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            <span class="button-info-member">7</span>
+                        </button>
+                        <button type="submit" class="button-info dislike" title="Không thích">
+                            <i class="bi bi-hand-thumbs-down-fill"></i>
+                            <span class="button-info-member">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="template-content">
+                    <div class="template-content-img">
+                        <img src="https://www.codingnepalweb.com/wp-content/uploads/2023/09/Create-A-Beautiful-Responsive-Website-in-HTML-and-CSS-696x392.jpg">
+                    </div>
+                    <div class="template-text">
+                        <div class="template-text-title">Khái quát</div>
+                        <div class="template-text-p">
+<textarea readonly>
+Một "carousel" (còn được gọi là "image slider" hoặc "image carousel") là một thành phần giao diện người dùng thường được sử dụng trên các trang web để hiển thị một loạt hình ảnh hoặc nội dung trượt qua một cách liên tục hoặc theo yêu cầu của người dùng. Carousel thường được sử dụng để trình bày thông tin một cách hấp dẫn và trực quan.
+
+Carousel thường được xây dựng bằng sử dụng các công nghệ web như HTML, CSS và JavaScript. Dưới đây là mô tả ngắn về cách mỗi phần của chúng đóng vai trò trong việc tạo một carousel:
+
+HTML: HTML sử dụng để tạo cấu trúc cơ bản của carousel. Điều này bao gồm tạo các phần tử HTML cho các mục trong carousel, ví dụ: các hình ảnh hoặc nội dung bạn muốn hiển thị.
+CSS: CSS được sử dụng để tạo kiểu cho các phần tử trong carousel, bao gồm kích thước, màu sắc, vị trí và hiệu ứng chuyển động như trượt qua trái hoặc phải. CSS cũng có thể được sử dụng để tạo thiết kế đáng mắt cho các điểm trượt hoặc chỉ mục của carousel.
+JavaScript: JavaScript được sử dụng để thêm tính năng động cho carousel. Điều này bao gồm việc xác định cách các hình ảnh hoặc nội dung chuyển đổi khi người dùng tương tác với carousel, chẳng hạn như bằng cách nhấp vào nút trước/sau hoặc các chỉ mục. JavaScript cũng có thể được sử dụng để xử lý các hiệu ứng chuyển động và thời gian trượt tự động của các mục trong carousel.
+
+Có nhiều thư viện và framework JavaScript, như Bootstrap, Slick Carousel, Swiper và Owl Carousel, cung cấp các giải pháp sẵn có để tạo carousel một cách dễ dàng với ít công sức hơn. Tuy nhiên, bạn cũng có thể tạo một carousel tùy chỉnh bằng cách viết mã HTML, CSS và JavaScript của riêng mình nếu bạn có kiến thức về các ngôn ngữ này.
+</textarea>
+                        </div>
+                        <p class="template-mess">Bạn có thể xem bản Demo hoặc có thể tải xuống Source Code tại đây!</p>
+
+                        <div class="template-button">
+                            <a href="#" class="template-button-btn">Demo</a>
+                            <a href="#" class="template-button-btn">Download</a>
+                        </div>
+
+                        <!-- --- -->
+                        <div class="template-answer">
+                            <div class="template-text-title">Đặt câu hỏi & Giải đáp</div>
+                            <form class="answer-form" action="" method="post" enctype="multipart/form-data">
+                                <textarea class="answer-textarea" name="" placeholder="Nội dung:" required></textarea>
+                                <input class="answer-input" type="text" name="" placeholder="Tên:*" required>
+                                <input class="answer-input" type="email" name="" placeholder="Email:*" required>
+                                <input class="answer-input" type="text" name="" placeholder="Thông tin khác: (có thể để trống)">
+                                <div class="answer-check">
+                                    <input type="checkbox" name="" required>
+                                    <span>Khi bạn click vào đồng ý thì bạn đã chấp nhận mọi 
+                                        <a href="#">Điều khoản</a> và 
+                                        <a href="#">Dịch vụ</a> của chúng tôi!
+                                    </span>
+                                </div>
+                                <button type="submit" name="" class="answer-btn">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --- -->
+            <div class="widget unsection">
+                <div class="section widget-new">
+                    <div class="section-header">
+                        <div class="section-header-text">Bài viết liên quan</div>
+                    </div>
+                    <div class="new-list">
+                        <div class="wrapper-item">
+                            <a href="#">
+                                <div class="wrapper-item-img">
+                                    <img src="https://www.codingnepalweb.com/wp-content/uploads/2023/09/Create-A-Beautiful-Responsive-Website-in-HTML-and-CSS-696x392.jpg">
+                                </div>
+                                <div class="wrapper-item-name current">Create A Beautiful Responsive Website in HTML and CSS</div>
+                                <p class="wrapper-item-time"><i class="bi bi-clock"></i> 2023/09/10</p>
+                            </a>
+                        </div>
+                        <div class="wrapper-item">
+                            <a href="#">
+                                <div class="wrapper-item-img">
+                                    <img src="https://www.codingnepalweb.com/wp-content/uploads/2023/09/Create-A-Beautiful-Responsive-Website-in-HTML-and-CSS-696x392.jpg">
+                                </div>
+                                <div class="wrapper-item-name current">Create A Beautiful Responsive Website in HTML and CSS</div>
+                                <p class="wrapper-item-time"><i class="bi bi-clock"></i> 2023/09/10</p>
+                            </a>
+                        </div>
+                        <div class="wrapper-item">
+                            <a href="#">
+                                <div class="wrapper-item-img">
+                                    <img src="https://www.codingnepalweb.com/wp-content/uploads/2023/09/Create-A-Beautiful-Responsive-Website-in-HTML-and-CSS-696x392.jpg">
+                                </div>
+                                <div class="wrapper-item-name current">Create A Beautiful Responsive Website in HTML and CSS</div>
+                                <p class="wrapper-item-time"><i class="bi bi-clock"></i> 2023/09/10</p>
+                            </a>
+                        </div>
+                        <div class="wrapper-item">
+                            <a href="#">
+                                <div class="wrapper-item-img">
+                                    <img src="https://www.codingnepalweb.com/wp-content/uploads/2023/09/Create-A-Beautiful-Responsive-Website-in-HTML-and-CSS-696x392.jpg">
+                                </div>
+                                <div class="wrapper-item-name current">Create A Beautiful Responsive Website in HTML and CSS</div>
+                                <p class="wrapper-item-time"><i class="bi bi-clock"></i> 2023/09/10</p>
+                            </a>
+                        </div>
+                        <div class="wrapper-item">
+                            <a href="#">
+                                <div class="wrapper-item-img">
+                                    <img src="https://www.codingnepalweb.com/wp-content/uploads/2023/09/Create-A-Beautiful-Responsive-Website-in-HTML-and-CSS-696x392.jpg">
+                                </div>
+                                <div class="wrapper-item-name current">Create A Beautiful Responsive Website in HTML and CSS</div>
+                                <p class="wrapper-item-time"><i class="bi bi-clock"></i> 2023/09/10</p>
+                            </a>
+                        </div>
+                        <div class="wrapper-item">
+                            <a href="#">
+                                <div class="wrapper-item-img">
+                                    <img src="https://www.codingnepalweb.com/wp-content/uploads/2023/09/Create-A-Beautiful-Responsive-Website-in-HTML-and-CSS-696x392.jpg">
+                                </div>
+                                <div class="wrapper-item-name current">Create A Beautiful Responsive Website in HTML and CSS</div>
+                                <p class="wrapper-item-time"><i class="bi bi-clock"></i> 2023/09/10</p>
+                            </a>
+                        </div>
+                        <div class="wrapper-item">
+                            <a href="#">
+                                <div class="wrapper-item-img">
+                                    <img src="https://www.codingnepalweb.com/wp-content/uploads/2023/09/Create-A-Beautiful-Responsive-Website-in-HTML-and-CSS-696x392.jpg">
+                                </div>
+                                <div class="wrapper-item-name current">Create A Beautiful Responsive Website in HTML and CSS</div>
+                                <p class="wrapper-item-time"><i class="bi bi-clock"></i> 2023/09/10</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- en container -->
+
+    <!-- st footer -->
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer-wrap-item">
+                <a href="#"><img src="./assets/image/logo.png"></a>
+            </div>
+            <div class="footer-wrap-item">
+                <h3 class="footer-title">Về chúng tôi</h3>
+                <p class="footer-text">Chúng tôi muốn dành một thời khắc để gửi lời cảm ơn sâu sắc 
+                    và lòng biết ơn chân thành đến tất cả các bạn. Các bạn không chỉ là những "người 
+                    lập trình," mà còn là những nhà thầu, nghệ sĩ và tiến sĩ của không gian kỹ thuật, 
+                    là những người đã xây dựng nên nền tảng của Internet và biến mọi thứ trở nên trực tuyến.</p>
+            </div>
+            <div class="footer-wrap-item">
+                <h3 class="footer-title">Theo dõi</h3>
+                <div class="follow-lis">
+                    <a href="#" class="follow-item"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="follow-item"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" class="follow-item"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-sub">
+            <p>Copyright © 2023 <a href="#">Dev</a> All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- en footer -->
+
+
+    <!-- st backtop -->
+    <div class="backtop" id="backtop">
+        <i class='bx bx-chevron-up'></i>
+    </div>
+    <!-- en backtop -->
+
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        $('textarea').each(function () {
+            this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+        }).on('input', function () {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+    </script>
+</body>
+</html>

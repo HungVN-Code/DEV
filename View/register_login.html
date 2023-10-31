@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev | HTML, CSS, JAVASCRIPT blog</title>
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                    <h2 class="title">Đăng nhập</h2>
+                    <div class="input-field">
+                        <i class='bx bx-user input-field-icon'></i>
+                        <input type="text" placeholder="Tên tài khoản hoặc email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bxs-lock input-field-icon'></i>
+                        <div class="field">
+                            <input class="inputkeyFirst" type="password" onkeyup="triggerFirst()" placeholder="Mật khẩu" required>
+                            <i class="bi bi-eye-fill showBtnFirst"></i>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn solid">Đăng nhập</button>
+
+                    <p class="social-text">Hoặc Đăng nhập bằng nền tảng xã hội</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class='bx bxl-google'></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </form>
+
+                <form action="#" class="sign-up-form">
+                    <h2 class="title">Đăng kí</h2>
+                    <div class="input-field">
+                        <i class='bx bx-user input-field-icon'></i>
+                        <input id="note-input-name" type="text" placeholder="Tên tài khoản" required>
+                        <i class='bx bxs-help-circle note-icon' id="note-icon-name"></i>
+                        <div class="note-wrap" id="note-name">
+                            <div class="note-title">Cách đặt tên tài khoản</div>
+                            <p>- Tên tài khoản tối thiểu ít nhất 4 kí tự</p>
+                            <p>- Tên tài khoản gồm chữ thường, số và kí tự đặc biệt</p>
+                            <p>- Tên tài khoản không có chữ in hoa</p>
+                            <p>- Tên tài khoản dài không quá 15 kí tự</p>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bx-envelope input-field-icon'></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bxs-lock input-field-icon'></i>
+                        <div class="field">
+                            <input id="note-input-pass" class="inputkey" onkeyup="trigger()" type="password" placeholder="Mật khẩu" required>
+                            <i class="bi bi-eye-fill showBtn"></i>
+                        </div>
+                        <i class='bx bxs-help-circle note-icon' id="note-icon-pass"></i>
+                        <div class="note-wrap" id="note-pass">
+                            <div class="note-title">Mẹo Chọn Mật Khẩu</div>
+                            <p>Mô hình Biểu thức chính quy thực hiện một công việc tuyệt vời là giảm thiểu độ dài của mã:</p>
+                            <p><span>Các ký tự khác</span>&#160;-&#160;Nếu độ dài dưới 8 ký tự.</p>
+                            <p><span>Yếu</span>&#160;-&#160;Nếu độ dài dưới 10 ký tự và không chứa tổ hợp ký hiệu, chữ hoa, văn bản.</p>
+                            <p><span>Trung bình</span>&#160;-&#160;Nếu độ dài từ 10 ký tự trở lên và có sự kết hợp của các ký hiệu, chữ hoa, chữ.</p>
+                            <p><span>Mạnh</span>&#160;-&#160;Nếu độ dài từ 14 ký tự trở lên và có sự kết hợp của các ký hiệu, chữ viết hoa, văn bản.</p>
+                            <p>- Ví dụ mật khẩu mạnh : "QvSAT^*&^&@1132"</p>
+                            <p>- Ví dụ mật khẩu yếu : "123456"</p>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bxs-lock input-field-icon'></i>
+                        <div class="field">
+                            <input class="inputkeyLass" type="password" onkeyup="triggerLass()" placeholder="nhập lại mật khẩu" required>
+                            <i class="bi bi-eye-fill showBtnLass"></i>
+                        </div>
+                    </div>
+                    <div class="indicator">
+                        <span class="weak"></span>
+                        <span class="medium"></span>
+                        <span class="strong"></span>
+                    </div>
+                    <div class="text"></div>
+                    <button type="submit" class="btn">Đăng kí</button>
+
+                    <p class="social-text">Hoặc Đăng ký với các nền tảng xã hội</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class='bx bxl-google'></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Bạn là người mới?</h3>
+                    <p>Hãy đăng kí ngay để có thể tham khảo nhiều project mới của chúng tôi!</p>
+                    <button class="btn transparent" id="sign-up-btn">
+                        Đăng kí
+                    </button>
+                </div>
+                <img src="./assets/image/log.svg" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Bạn đã quay trở lại?</h3>
+                    <p>Hãy nhanh tay truy cập để không bỏ lỡ những project mới nha!</p>
+                    <button class="btn transparent" id="sign-in-btn">
+                        Đăng nhập
+                    </button>
+                </div>
+                <img src="./assets/image/register.svg" class="image">
+            </div>
+        </div>
+    </div>
+
+    <!-- st toast messages -->
+    <div class="toast" id="myToast">
+        <i class='bx bxs-error-circle'></i>
+        <div class="toast-body">
+            <div class="toast-title">Thông báo</div>
+            <p class="toast-text">Mật khẩu của bạn không đúng!</p>
+        </div>
+        <i class="bi bi-x" onclick="closeToast()"></i>
+    </div>
+    <!-- en toast messages -->
+
+    <!-- js -->
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/message.js"></script>
+</body>
+</html>
